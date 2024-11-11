@@ -1,0 +1,54 @@
+v {xschem version=3.4.3 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {type=subcircuit
+format="@name @pinlist @symname"
+template="name=W1"}
+E {}
+L 4 -90 -80 -90 80 {}
+L 4 90 -80 90 80 {}
+L 4 -40 -40 -20 0 {}
+L 4 -20 0 0 -20 {}
+L 4 0 -20 20 0 {}
+L 4 20 0 40 -40 {}
+L 4 -110 -30 -90 -30 {}
+L 4 -110 30 -90 30 {}
+L 4 -40 80 -40 100 {}
+L 4 20 80 20 100 {}
+L 4 90 60 110 60 {}
+L 4 90 0 110 0 {}
+L 4 90 -60 110 -60 {}
+L 4 50 -100 50 -80 {}
+L 4 -10 -100 -10 -80 {}
+L 4 -70 -100 -70 -80 {}
+L 4 -90 -80 90 -80 {}
+L 4 -90 80 90 80 {}
+L 4 80 80 80 120 {}
+L 4 80 -120 80 -80 {}
+B 5 -72.5 -102.5 -67.5 -97.5 {name=Vpi
+dir=inout}
+B 5 -12.5 -102.5 -7.5 -97.5 {name=xj
+dir=inout}
+B 5 47.5 -102.5 52.5 -97.5 {name=Q
+dir=inout}
+B 5 107.5 -62.5 112.5 -57.5 {name=Hpi
+dir=inout}
+B 5 107.5 -2.5 112.5 2.5 {name=Ioutn
+dir=inout}
+B 5 107.5 57.5 112.5 62.5 {name=EN_UPD
+dir=inout}
+B 5 17.5 97.5 22.5 102.5 {name=probe
+dir=inout}
+B 5 -42.5 97.5 -37.5 102.5 {name=thetaj
+dir=inout}
+B 5 -112.5 27.5 -107.5 32.5 {name=sel
+dir=inout}
+B 5 -112.5 -32.5 -107.5 -27.5 {name=Ioutp
+dir=inout}
+B 5 77.5 117.5 82.5 122.5 {name=GND
+dir=inout}
+B 5 77.5 -122.5 82.5 -117.5 {name=Vdd
+dir=inout}
+T {@name} -40 10 0 0 0.4 0.4 {}
