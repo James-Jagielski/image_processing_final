@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -230,8 +230,8 @@ spiceprefix=X
 C {madvlsi/capacitor.sym} 340 180 0 0 {name=C1
 value=1p
 m=1}
-C {/home/madvlsi/image_processing_final/triode.sym} 580 170 0 0 {name=X1}
-C {/home/madvlsi/image_processing_final/triode.sym} 720 170 0 1 {name=X2}
+C {/home/ttuser/image_processing_final/triode.sym} 580 170 0 0 {name=X1}
+C {/home/ttuser/image_processing_final/triode.sym} 720 170 0 1 {name=X2}
 C {madvlsi/pmos3.sym} 530 -50 0 1 {name=M7
 L=0.15
 W=1
@@ -262,7 +262,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/madvlsi/image_processing_final/triode.sym} 700 670 0 0 {name=X3}
+C {/home/ttuser/image_processing_final/triode.sym} 700 670 0 0 {name=X3}
 C {madvlsi/pmos3.sym} 530 330 0 1 {name=M9
 L=0.15
 W=1

@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -147,7 +147,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/madvlsi/image_processing_final/triode.sym} 50 400 0 0 {name=X1}
+C {/home/ttuser/image_processing_final/triode.sym} 50 400 0 0 {name=X1}
 C {devices/iopin.sym} 160 -30 0 0 {name=p1 lab=Ioutn}
 C {devices/iopin.sym} 160 40 0 0 {name=p2 lab=Ioutp}
 C {devices/iopin.sym} -90 120 0 1 {name=p3 lab=thetaj}
