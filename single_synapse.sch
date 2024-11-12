@@ -57,6 +57,10 @@ N 10 440 10 460 {
 lab=Vdd}
 N -10 440 -10 460 {
 lab=GND}
+N 60 390 90 390 {
+lab=Wij}
+N -80 380 -60 380 {
+lab=Wij}
 C {madvlsi/pmos3.sym} -60 -30 0 0 {name=M1
 L=0.15
 W=1
@@ -147,13 +151,13 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/ttuser/image_processing_final/triode.sym} 50 400 0 0 {name=X1}
 C {devices/iopin.sym} 160 -30 0 0 {name=p1 lab=Ioutn}
 C {devices/iopin.sym} 160 40 0 0 {name=p2 lab=Ioutp}
 C {devices/iopin.sym} -90 120 0 1 {name=p3 lab=thetaj}
 C {devices/iopin.sym} 90 120 0 0 {name=p4 lab=xj}
-C {devices/iopin.sym} -60 380 0 1 {name=p5 lab=Wij}
-C {devices/iopin.sym} 60 390 0 0 {name=p6 lab=Vb}
+C {devices/iopin.sym} -80 380 0 1 {name=p15 lab=Wij}
+C {devices/iopin.sym} 90 390 0 0 {name=p16 lab=Vb}
 C {devices/iopin.sym} 60 330 0 0 {name=p7 lab=Vc}
 C {devices/iopin.sym} -10 460 1 0 {name=p8 lab=GND}
 C {devices/iopin.sym} 20 -80 3 0 {name=p9 lab=Vdd}
+C {/home/ttuser/image_processing_final/triode.sym} 50 400 0 0 {name=X1}
