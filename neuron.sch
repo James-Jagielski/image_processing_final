@@ -10,7 +10,7 @@ lab=Ioutp}
 N -60 30 60 30 {
 lab=#net1}
 N 150 100 270 100 {
-lab=xi}
+lab=Vlamda}
 N -0 30 0 180 {
 lab=#net1}
 N 30 210 180 210 {
@@ -22,13 +22,13 @@ lab=#net1}
 N -0 240 210 240 {
 lab=GND}
 N 210 100 210 180 {
-lab=xi}
+lab=Vlamda}
 N 590 100 710 100 {
-lab=xi}
+lab=Vlamda}
 N 590 160 710 160 {
-lab=xi}
+lab=Vlamda}
 N 210 150 470 150 {
-lab=xi}
+lab=Vlamda}
 N 560 -50 740 -50 {
 lab=#net2}
 N 730 -50 730 0 {
@@ -38,11 +38,11 @@ lab=#net2}
 N 770 -20 770 20 {
 lab=#net2}
 N 530 -20 530 20 {
-lab=xi}
+lab=Vlamda}
 N 420 0 530 -0 {
-lab=xi}
+lab=Vlamda}
 N 420 0 420 150 {
-lab=xi}
+lab=Vlamda}
 N 560 330 740 330 {
 lab=#net3}
 N 730 330 730 380 {
@@ -50,15 +50,15 @@ lab=#net3}
 N 730 380 770 380 {
 lab=#net3}
 N 530 360 530 440 {
-lab=xi}
+lab=Vlamda}
 N 770 360 770 440 {
 lab=#net3}
 N 420 400 530 400 {
-lab=xi}
+lab=Vlamda}
 N 420 470 500 470 {
-lab=xi}
+lab=Vlamda}
 N 420 150 420 470 {
-lab=xi}
+lab=Vlamda}
 N 530 500 770 500 {
 lab=#net4}
 N 650 500 650 520 {
@@ -128,15 +128,24 @@ lab=Irefp}
 N 300 70 310 70 {
 lab=Irefn}
 N -100 150 210 150 {
-lab=xi}
-N 650 80 650 100 {
-lab=xi}
-N 650 160 650 180 {
-lab=xi}
+lab=Vlamda}
 N 830 150 920 150 {
-lab=xi}
+lab=Vlamda}
 N 800 470 920 470 {
 lab=xi_T}
+N 710 600 920 600 {
+lab=Vlamda}
+N 650 40 650 100 {
+lab=Vlamda}
+N 650 40 900 40 {
+lab=Vlamda}
+N 900 40 900 600 {
+lab=Vlamda}
+N 710 660 900 660 {
+lab=Vlamda}
+N 650 160 650 420 {}
+N 650 420 840 420 {}
+N 840 420 840 660 {}
 C {madvlsi/pmos3.sym} -60 0 0 0 {name=M1
 L=0.15
 W=1
@@ -324,8 +333,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/iopin.sym} 590 650 2 0 {name=p1 lab=Vlamda}
-C {devices/iopin.sym} 710 660 2 1 {name=p2 lab=Vb}
-C {devices/iopin.sym} 710 600 2 1 {name=p3 lab=Vc_out}
+C {devices/iopin.sym} 900 660 2 1 {name=p2 lab=Vb}
+C {devices/iopin.sym} 920 600 2 1 {name=p3 lab=Vc_out}
 C {devices/iopin.sym} 370 740 1 0 {name=p9 lab=GND}
 C {devices/iopin.sym} 650 -100 3 0 {name=p12 lab=Vdd}
 C {devices/iopin.sym} -100 0 0 1 {name=p4 lab=Ioutn}
@@ -333,7 +342,5 @@ C {devices/iopin.sym} -100 70 0 1 {name=p5 lab=Ioutp}
 C {devices/iopin.sym} 100 0 2 1 {name=p6 lab=Irefp}
 C {devices/iopin.sym} 310 70 2 1 {name=p7 lab=Irefn}
 C {devices/iopin.sym} -100 150 0 1 {name=p8 lab=xi}
-C {devices/iopin.sym} 650 80 1 1 {name=p10 lab=Vc_out}
-C {devices/iopin.sym} 650 180 3 1 {name=p11 lab=Vb}
 C {devices/iopin.sym} 920 470 2 1 {name=p13 lab=xi_T}
 C {devices/iopin.sym} 920 150 2 1 {name=p14 lab=xoff}
