@@ -1,0 +1,204 @@
+timestamp 1695733563
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use CSRL_latch CSRL_latch_3 1 0 1770 0 1 -980
+use CSRL_latch CSRL_latch_2 1 0 1270 0 1 -980
+use CSRL_latch CSRL_latch_1 1 0 770 0 1 -980
+use CSRL_latch CSRL_latch_0 1 0 270 0 1 -980
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "CSRL_latch_3/GND" "CSRL_latch_1/a_n100_1350#" 0.121134
+cap "CSRL_latch_3/GND" "CSRL_latch_2/Dn" 9.52906
+cap "CSRL_latch_3/CLK" "CSRL_latch_1/Dn" 39.6301
+cap "CSRL_latch_1/Dn" "CSRL_latch_1/a_n100_2330#" 0.145422
+cap "CSRL_latch_3/GND" "CSRL_latch_3/CLK" -27.9667
+cap "CSRL_latch_2/a_n100_2720#" "CSRL_latch_2/D" 7.83583
+cap "CSRL_latch_3/GND" "CSRL_latch_1/a_n100_2330#" 0.0302835
+cap "CSRL_latch_2/a_n100_1350#" "CSRL_latch_2/D" 0.180751
+cap "CSRL_latch_3/GND" "CSRL_latch_1/D" 16.0829
+cap "CSRL_latch_3/GND" "CSRL_latch_0/a_n100_2720#" 0.79956
+cap "CSRL_latch_2/D" "CSRL_latch_2/a_n100_3780#" 60.1193
+cap "CSRL_latch_1/a_n100_3780#" "CSRL_latch_1/D" 60.1193
+cap "CSRL_latch_2/a_n100_2720#" "CSRL_latch_2/a_n100_3780#" 2.84217e-14
+cap "CSRL_latch_3/GND" "CSRL_latch_2/D" 16.3703
+cap "CSRL_latch_1/a_n100_2720#" "CSRL_latch_1/D" 7.83583
+cap "CSRL_latch_3/GND" "CSRL_latch_2/a_n100_2330#" 0.0142305
+cap "CSRL_latch_2/a_n100_2720#" "CSRL_latch_3/GND" 1.89353
+cap "CSRL_latch_3/CLK" "CSRL_latch_2/Dn" 39.6301
+cap "CSRL_latch_3/GND" "CSRL_latch_3/D" 0.131947
+cap "CSRL_latch_3/GND" "CSRL_latch_3/Dn" 0.384852
+cap "CSRL_latch_3/GND" "CSRL_latch_2/a_n100_1350#" 0.0569221
+cap "CSRL_latch_3/GND" "CSRL_latch_1/Dn" 9.14421
+cap "CSRL_latch_3/GND" "CSRL_latch_2/a_n100_3780#" 3.83695
+cap "CSRL_latch_1/a_n100_3780#" "CSRL_latch_1/Dn" 36.7903
+cap "CSRL_latch_1/D" "CSRL_latch_1/a_n100_1350#" 0.180751
+cap "CSRL_latch_1/Dn" "CSRL_latch_1/a_n100_2720#" 8.35851
+cap "CSRL_latch_3/GND" "CSRL_latch_1/a_n100_3780#" 4.61721
+cap "CSRL_latch_3/CLK" "CSRL_latch_1/D" 120.685
+cap "CSRL_latch_0/a_n100_3780#" "CSRL_latch_3/GND" 0.851726
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/a_n100_2330#" 0.145422
+cap "CSRL_latch_2/a_n100_2720#" "CSRL_latch_2/Dn" 8.35851
+cap "CSRL_latch_3/GND" "CSRL_latch_1/a_n100_2720#" 2.69309
+cap "CSRL_latch_3/CLK" "CSRL_latch_2/D" 120.685
+cap "CSRL_latch_1/a_n100_3780#" "CSRL_latch_1/a_n100_2720#" 2.84217e-14
+cap "CSRL_latch_3/GND" "CSRL_latch_0/VDD" -0.0374826
+cap "CSRL_latch_3/GND" "CSRL_latch_0/a_n100_1350#" 0.064212
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/a_n100_3780#" 36.7903
+cap "CSRL_latch_3/GND" "CSRL_latch_0/a_n100_2330#" 0.016053
+cap "CSRL_latch_3/a_n100_2720#" "CSRL_latch_3/GND" 1.89353
+cap "CSRL_latch_3/a_n100_2720#" "CSRL_latch_3/a_n100_3780#" 2.84217e-14
+cap "CSRL_latch_3/GND" "CSRL_latch_3/D" 16.2384
+cap "CSRL_latch_3/D" "CSRL_latch_3/a_n100_3780#" 60.1193
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/D" 120.685
+cap "CSRL_latch_2/a_n100_2720#" "CSRL_latch_3/GND" 0.79956
+cap "CSRL_latch_3/GND" "CSRL_latch_0/VDD" -0.0187413
+cap "CSRL_latch_3/Dn" "CSRL_latch_3/a_n100_2330#" 0.145422
+cap "CSRL_latch_3/D" "CSRL_latch_3/a_n100_1350#" 0.180751
+cap "CSRL_latch_3/a_n100_2720#" "CSRL_latch_3/D" 7.83583
+cap "CSRL_latch_2/a_n100_3780#" "CSRL_latch_3/GND" 0.780266
+cap "CSRL_latch_3/GND" "CSRL_latch_3/a_n100_2330#" 0.0142305
+cap "CSRL_latch_3/GND" "CSRL_latch_2/a_n100_2330#" 0.016053
+cap "CSRL_latch_3/Dn" "CSRL_latch_3/GND" 9.14421
+cap "CSRL_latch_3/Dn" "CSRL_latch_3/a_n100_3780#" 36.7903
+cap "CSRL_latch_3/GND" "CSRL_latch_3/Q" 0.294436
+cap "CSRL_latch_3/Qn" "CSRL_latch_3/GND" 0.384852
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/Dn" 39.6301
+cap "CSRL_latch_2/a_n100_1350#" "CSRL_latch_3/GND" 0.064212
+cap "CSRL_latch_3/GND" "CSRL_latch_3/a_n100_3780#" 3.76549
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/GND" -13.9834
+cap "CSRL_latch_3/a_n100_2720#" "CSRL_latch_3/Dn" 8.35851
+cap "CSRL_latch_3/GND" "CSRL_latch_3/a_n100_1350#" 0.0569221
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/a_n100_2330#" 0.180751
+cap "CSRL_latch_3/GND" "CSRL_latch_0/a_n100_3780#" 0.0435427
+cap "CSRL_latch_2/a_n100_2720#" "CSRL_latch_2/D" 1.0521
+cap "CSRL_latch_3/CLK" "CSRL_latch_1/a_n100_2720#" 5.68434e-14
+cap "CSRL_latch_2/a_n100_2330#" "CSRL_latch_3/GND" 0.0426916
+cap "CSRL_latch_1/Dn" "CSRL_latch_1/a_n100_2720#" 125.021
+cap "CSRL_latch_3/CLK" "CSRL_latch_2/D" 136.212
+cap "CSRL_latch_3/CLK" "CSRL_latch_1/a_n100_3780#" 2.84217e-14
+cap "CSRL_latch_1/Dn" "CSRL_latch_1/a_n100_3780#" 81.8581
+cap "CSRL_latch_2/Dn" "CSRL_latch_3/VDD" -18.6014
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/D" -9.51686
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/a_n100_3780#" 4.98684
+cap "CSRL_latch_1/a_160_2720#" "CSRL_latch_3/VDD" 3.04958
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/GND" -16.5077
+cap "CSRL_latch_2/Dn" "CSRL_latch_3/GND" -8.49447
+cap "CSRL_latch_3/GND" "CSRL_latch_1/D" -0.0779726
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/a_n100_3780#" -14.0055
+cap "CSRL_latch_3/VDD" "CSRL_latch_0/a_160_2720#" 3.04958
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/a_n100_3780#" 81.8581
+cap "CSRL_latch_3/Dn" "CSRL_latch_3/GND" 0.12354
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/a_n100_2720#" 125.021
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/a_n100_2720#" -4.66872
+cap "CSRL_latch_2/a_n100_3780#" "CSRL_latch_3/GND" 0.0830526
+cap "CSRL_latch_2/Dn" "CSRL_latch_3/CLK" 80.1083
+cap "CSRL_latch_3/CLK" "CSRL_latch_1/D" 136.212
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/CLK" -25.4981
+cap "CSRL_latch_3/D" "CSRL_latch_3/GND" 0.028611
+cap "CSRL_latch_0/a_n100_2330#" "CSRL_latch_3/GND" 0.048159
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/Dn" -18.6014
+cap "CSRL_latch_3/GND" "CSRL_latch_2/a_n100_2720#" 1.1859
+cap "CSRL_latch_1/Dn" "CSRL_latch_1/D" -1.14888
+cap "CSRL_latch_1/a_n100_2330#" "CSRL_latch_3/GND" 0.0908506
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/GND" 0.677072
+cap "CSRL_latch_1/Dn" "CSRL_latch_3/GND" -8.61801
+cap "CSRL_latch_2/a_n100_3780#" "CSRL_latch_3/CLK" 2.84217e-14
+cap "CSRL_latch_3/CLK" "CSRL_latch_2/a_n100_2720#" -2.84217e-14
+cap "CSRL_latch_1/a_n100_2330#" "CSRL_latch_1/Dn" 0.180751
+cap "CSRL_latch_1/Dn" "CSRL_latch_3/CLK" 80.1083
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/a_n100_2720#" -4.66872
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/a_n100_2720#" 8.96242
+cap "CSRL_latch_1/D" "CSRL_latch_1/a_n100_2720#" 1.0521
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/a_n100_3780#" -14.0055
+cap "CSRL_latch_0/a_n100_2720#" "CSRL_latch_3/GND" 0.245194
+cap "CSRL_latch_1/D" "CSRL_latch_1/a_n100_3780#" 16.2231
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/D" -9.51686
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/D" -1.14888
+cap "CSRL_latch_3/GND" "CSRL_latch_1/a_n100_3780#" 0.126595
+cap "CSRL_latch_3/GND" "CSRL_latch_1/a_n100_2720#" 1.4311
+cap "CSRL_latch_3/GND" "CSRL_latch_2/D" -0.0493616
+cap "CSRL_latch_2/a_n100_3780#" "CSRL_latch_2/D" 16.2231
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/a_n100_3780#" -18.9923
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/D" -9.51686
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/a_n100_2720#" -13.6311
+cap "CSRL_latch_3/GND" "CSRL_latch_3/CLK" 0.338536
+cap "CSRL_latch_3/GND" "CSRL_latch_3/a_n100_3780#" 0.0830526
+cap "CSRL_latch_3/GND" "CSRL_latch_3/Dn" -8.61801
+cap "CSRL_latch_3/GND" "CSRL_latch_3/Qn" 0.12354
+cap "CSRL_latch_3/GND" "CSRL_latch_3/D" -0.0779726
+cap "CSRL_latch_2/a_n100_2330#" "CSRL_latch_3/GND" 0.048159
+cap "CSRL_latch_2/a_n100_3780#" "CSRL_latch_3/GND" 0.0435427
+cap "CSRL_latch_3/GND" "CSRL_latch_3/a_n100_2720#" 1.1859
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/Dn" 80.1083
+cap "CSRL_latch_3/a_n100_2330#" "CSRL_latch_3/GND" 0.0426916
+cap "CSRL_latch_3/a_n100_3780#" "CSRL_latch_3/CLK" 2.84217e-14
+cap "CSRL_latch_3/GND" "CSRL_latch_3/VDD" -8.25385
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/D" 136.212
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/a_n100_2720#" 5.68434e-14
+cap "CSRL_latch_3/a_n100_3780#" "CSRL_latch_3/Dn" 81.8581
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/CLK" -22.7111
+cap "CSRL_latch_3/Q" "CSRL_latch_3/GND" 0.028611
+cap "CSRL_latch_3/a_n100_3780#" "CSRL_latch_3/D" 16.2231
+cap "CSRL_latch_3/D" "CSRL_latch_3/Dn" -1.14888
+cap "CSRL_latch_2/a_n100_2720#" "CSRL_latch_3/GND" 0.245194
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/a_160_2720#" 3.04958
+cap "CSRL_latch_3/a_n100_2720#" "CSRL_latch_3/Dn" 125.021
+cap "CSRL_latch_3/a_n100_2330#" "CSRL_latch_3/Dn" 0.180751
+cap "CSRL_latch_3/D" "CSRL_latch_3/a_n100_2720#" 1.0521
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/Dn" -18.6014
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/CLK" 1.11335
+cap "CSRL_latch_1/D" "CSRL_latch_1/CLK" 0.339288
+cap "CSRL_latch_1/Dn" "CSRL_latch_1/CLK" 4.8
+cap "CSRL_latch_3/a_n100_3780#" "CSRL_latch_3/VDD" 3.21739
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/a_n100_2720#" 1.11335
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/a_n100_3780#" 3.09345
+cap "CSRL_latch_2/Dn" "CSRL_latch_3/VDD" 0.585505
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/a_160_3780#" 3.21008
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/a_n100_3780#" 3.09345
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/CLK" 4.8
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/CLK" 1.04768
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/a_n100_2720#" 1.11335
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/CLK" 1.9094
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/GND" -1.14694
+cap "CSRL_latch_1/Dn" "CSRL_latch_1/D" -1.14888
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/D" -43.8202
+cap "CSRL_latch_2/CLK" "CSRL_latch_2/D" 0.339288
+cap "CSRL_latch_0/CLK" "CSRL_latch_3/VDD" 1.11335
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/a_n100_2720#" 1.11335
+cap "CSRL_latch_3/VDD" "CSRL_latch_1/D" -43.8202
+cap "CSRL_latch_1/GND" "CSRL_latch_3/VDD" -1.14694
+cap "CSRL_latch_1/Dn" "CSRL_latch_3/VDD" 0.585505
+cap "CSRL_latch_2/Dn" "CSRL_latch_2/D" -1.14888
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/CLK" 1.04768
+cap "CSRL_latch_2/a_n100_3780#" "CSRL_latch_2/D" 1.68014
+cap "CSRL_latch_1/D" "CSRL_latch_1/a_n100_3780#" 1.68014
+cap "CSRL_latch_3/VDD" "CSRL_latch_0/a_160_3780#" 3.21008
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/D" -43.8202
+cap "CSRL_latch_3/VDD" "CSRL_latch_2/CLK" 1.11335
+cap "CSRL_latch_3/a_n100_3780#" "CSRL_latch_3/VDD" -0.12394
+cap "CSRL_latch_3/GND" "CSRL_latch_3/VDD" -1.14694
+cap "CSRL_latch_3/Dn" "CSRL_latch_3/CLK" 4.8
+cap "CSRL_latch_3/VDD" "CSRL_latch_3/CLK" -0.861717
+cap "CSRL_latch_3/Dn" "CSRL_latch_3/VDD" 0.585505
+cap "CSRL_latch_3/a_n100_3780#" "CSRL_latch_3/D" 1.68014
+cap "CSRL_latch_2/a_160_3780#" "CSRL_latch_3/VDD" 3.21008
+cap "CSRL_latch_3/CLK" "CSRL_latch_3/D" 0.339288
+cap "CSRL_latch_3/Dn" "CSRL_latch_3/D" -1.14888
+merge "CSRL_latch_0/VDD" "CSRL_latch_1/VDD" -4385.29 0 0 0 0 -891000 -10980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -151200 -2760 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_1/VDD" "CSRL_latch_2/VDD"
+merge "CSRL_latch_2/VDD" "CSRL_latch_3/VDD"
+merge "CSRL_latch_0/CLK" "CSRL_latch_1/CLK" -1031.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12000 -840 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_1/CLK" "CSRL_latch_2/CLK"
+merge "CSRL_latch_2/CLK" "CSRL_latch_3/CLK"
+merge "CSRL_latch_2/Qn" "CSRL_latch_3/Dn" -331.828 0 0 0 0 0 0 0 0 0 0 -20000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_0/GND" "CSRL_latch_1/GND" -2722.97 0 0 0 0 0 0 0 0 -120000 -3600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -86400 -3120 -357600 -9240 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_1/GND" "CSRL_latch_2/GND"
+merge "CSRL_latch_2/GND" "CSRL_latch_3/GND"
+merge "CSRL_latch_3/GND" "VSUBS"
+merge "CSRL_latch_1/Q" "CSRL_latch_2/D" -312.833 0 0 0 0 0 0 0 0 0 0 -20000 -700 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_0/Qn" "CSRL_latch_1/Dn" -331.828 0 0 0 0 0 0 0 0 0 0 -20000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_2/Q" "CSRL_latch_3/D" -312.833 0 0 0 0 0 0 0 0 0 0 -20000 -700 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_0/Q" "CSRL_latch_1/D" -312.833 0 0 0 0 0 0 0 0 0 0 -20000 -700 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -520 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSRL_latch_1/Qn" "CSRL_latch_2/Dn" -331.828 0 0 0 0 0 0 0 0 0 0 -20000 -600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14400 -520 0 0 0 0 0 0 0 0 0 0 0 0

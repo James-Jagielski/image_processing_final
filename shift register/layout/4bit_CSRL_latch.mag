@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1695695590
+use CSRL_latch  CSRL_latch_0
+timestamp 1695693994
+transform 1 0 135 0 1 -490
+box -135 490 205 2165
+use CSRL_latch  CSRL_latch_1
+timestamp 1695693994
+transform 1 0 385 0 1 -490
+box -135 490 205 2165
+use CSRL_latch  CSRL_latch_2
+timestamp 1695693994
+transform 1 0 635 0 1 -490
+box -135 490 205 2165
+use CSRL_latch  CSRL_latch_3
+timestamp 1695693994
+transform 1 0 885 0 1 -490
+box -135 490 205 2165
+<< end >>

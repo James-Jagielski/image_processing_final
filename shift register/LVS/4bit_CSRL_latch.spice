@@ -1,0 +1,34 @@
+* NGSPICE file created from 4bit_CSRL_latch.ext - technology: sky130A
+
+.subckt CSRL_latch CLK VDD GND D Dn Q Qn
+X0 Qn CLK a_n100_2720# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.3
+X1 Q Qn a_160_3780# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.2 ps=1.4 w=1 l=0.15
+X2 GND Q Qn GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 a_n100_2720# CLK Dn VDD sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X4 a_n100_3780# a_n100_2720# a_n100_1350# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.125 ps=1.25 w=1 l=0.15
+X5 Q CLK a_n100_3780# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.3
+X6 a_n100_3780# CLK D VDD sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X7 a_160_2720# CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.25 ps=1.5 w=1 l=0.15
+X8 a_n100_2330# CLK GND GND sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.5 ps=3 w=1 l=0.15
+X9 GND Qn Q GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X10 a_160_3780# CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.25 ps=1.5 w=1 l=0.15
+X11 VDD a_n100_3780# a_n100_2720# VDD sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X12 VDD a_n100_2720# a_n100_3780# VDD sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X13 Qn Q a_160_2720# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.2 ps=1.4 w=1 l=0.15
+X14 a_n100_1350# CLK GND GND sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.5 ps=3 w=1 l=0.15
+X15 a_n100_2720# a_n100_3780# a_n100_2330# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.125 ps=1.25 w=1 l=0.15
+.ends
+
+
+* Top level circuit 4bit_CSRL_latch
+
+XCSRL_latch_0 CSRL_latch_3/CLK CSRL_latch_3/VDD VSUBS CSRL_latch_0/D CSRL_latch_0/Dn
++ CSRL_latch_1/D CSRL_latch_1/Dn CSRL_latch
+XCSRL_latch_1 CSRL_latch_3/CLK CSRL_latch_3/VDD VSUBS CSRL_latch_1/D CSRL_latch_1/Dn
++ CSRL_latch_2/D CSRL_latch_2/Dn CSRL_latch
+XCSRL_latch_2 CSRL_latch_3/CLK CSRL_latch_3/VDD VSUBS CSRL_latch_2/D CSRL_latch_2/Dn
++ CSRL_latch_3/D CSRL_latch_3/Dn CSRL_latch
+XCSRL_latch_3 CSRL_latch_3/CLK CSRL_latch_3/VDD VSUBS CSRL_latch_3/D CSRL_latch_3/Dn
++ CSRL_latch_3/Q CSRL_latch_3/Qn CSRL_latch
+.end
+
