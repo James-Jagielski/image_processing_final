@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {type=subcircuit
@@ -31,17 +31,11 @@ L 4 -40 20 -40 40 {}
 L 4 -40 20 -40 40 {}
 B 5 -112.5 -22.5 -107.5 -17.5 {name=Vin
 dir=inout}
-B 5 -112.5 -22.5 -107.5 -17.5 {name=Vin
-dir=inout}
 B 5 -62.5 37.5 -57.5 42.5 {name=GND
 dir=inout}
 B 5 7.5 -12.5 12.5 -7.5 {name=Vb
 dir=inout}
-B 5 7.5 -12.5 12.5 -7.5 {name=Vin
-dir=inout}
 B 5 7.5 -72.5 12.5 -67.5 {name=Vc
-dir=inout}
-B 5 7.5 -72.5 12.5 -67.5 {name=Vin
 dir=inout}
 B 5 -52.5 -152.5 -47.5 -147.5 {name=Vout
 dir=inout}
