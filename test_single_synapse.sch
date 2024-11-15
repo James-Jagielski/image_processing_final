@@ -30,15 +30,9 @@ value=1.8}
 C {madvlsi/vsource.sym} -610 -120 0 0 {name=Vb
 value=0.7
 }
-C {madvlsi/vsource.sym} -700 -120 0 0 {name=V3
+C {madvlsi/vsource.sym} -120 160 0 0 {name=Vc
 value=1}
 C {madvlsi/vdd.sym} -480 -150 0 0 {name=l1 lab=VDD}
-C {madvlsi/tt_models.sym} -340 210 0 0 {
-name=TT_MODELS
-only_toplevel=false
-value=".option wnflag=1
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
-}
 C {madvlsi/gnd.sym} -480 -90 0 0 {name=l2 lab=GND}
 C {/home/ttuser/image_processing_final/single_synapse.sym} 40 -10 0 0 {}
 C {madvlsi/gnd.sym} 60 90 0 0 {name=l3 lab=GND}
@@ -46,8 +40,8 @@ C {madvlsi/vdd.sym} 40 -110 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} -610 -90 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} -610 -150 3 1 {name=p1 lab=Vb}
 C {devices/lab_pin.sym} 0 -110 3 1 {name=p2 lab=Vb}
-C {madvlsi/gnd.sym} -700 -90 0 0 {name=l6 lab=GND}
-C {devices/lab_pin.sym} -700 -150 3 1 {name=p3 lab=Vc}
+C {madvlsi/gnd.sym} -120 190 0 0 {name=l6 lab=GND}
+C {devices/lab_pin.sym} -120 130 3 1 {name=p3 lab=Vc}
 C {devices/lab_pin.sym} 80 -110 3 1 {name=p4 lab=Vc}
 C {madvlsi/vsource.sym} -360 -120 0 0 {name=Vtheta
 value=1}
@@ -70,3 +64,12 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_pin.sym} 140 -50 1 0 {name=Vtheta4 lab=vout}
+C {devices/code.sym} -490 230 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}
