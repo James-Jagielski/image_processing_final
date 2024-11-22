@@ -1,43 +1,45 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
-K {type=subcircuit
-format="@name @pinlist @symname"
-template="name=x1"
-}
+K {}
 V {}
-S {}
+S {type=subcircuit
+format="@name @pinlist @symname"
+template="name=W1"}
 E {}
-L 4 -130 -90 130 -90 {}
-L 4 -130 90 130 90 {}
-L 4 -130 -90 -130 90 {}
-L 4 130 -90 130 90 {}
-L 7 5 -110 5 -90 {}
-L 7 130 -55 150 -55 {}
-L 7 130 -35 150 -35 {}
-L 7 -150 15 -130 15 {}
-L 7 -150 -25 -130 -25 {}
-L 7 45 -110 45 -90 {}
-L 7 -45 90 -45 110 {}
-L 7 -35 -110 -35 -90 {}
-L 7 45 90 45 110 {}
-B 5 2.5 -112.5 7.5 -107.5 {name=Vdd dir=inout}
-B 5 147.5 -57.5 152.5 -52.5 {name=Ioutn dir=inout}
-B 5 147.5 -37.5 152.5 -32.5 {name=Ioutp dir=inout}
-B 5 -152.5 12.5 -147.5 17.5 {name=xj dir=inout}
-B 5 -152.5 -27.5 -147.5 -22.5 {name=thetaj dir=inout}
-B 5 42.5 -112.5 47.5 -107.5 {name=vc dir=inout}
-B 5 -47.5 107.5 -42.5 112.5 {name=Wij dir=inout}
-B 5 -37.5 -112.5 -32.5 -107.5 {name=Vb dir=inout}
-B 5 42.5 107.5 47.5 112.5 {name=GND dir=inout}
-T {@symname} -81 -6 0 0 0.3 0.3 {}
-T {@name} 135 -102 0 0 0.2 0.2 {}
-T {Vdd} 1 -85 3 1 0.2 0.2 {}
-T {Ioutn} 125 -59 0 1 0.2 0.2 {}
-T {Ioutp} 125 -39 0 1 0.2 0.2 {}
-T {xj} -125 19 2 1 0.2 0.2 {}
-T {thetaj} -125 -21 2 1 0.2 0.2 {}
-T {vc} 41 -85 3 1 0.2 0.2 {}
-T {Wij} -41 85 1 1 0.2 0.2 {}
-T {Vb} -30 -84 0 1 0.2 0.2 {}
-T {GND} 49 85 1 1 0.2 0.2 {}
+L 4 -60 -60 -60 60 {}
+L 4 -60 -60 60 -60 {}
+L 4 60 -60 60 60 {}
+L 4 -60 60 60 60 {}
+L 4 -100 -40 -60 -40 {}
+L 4 -100 -0 -60 -0 {}
+L 4 -20 60 -20 100 {}
+L 4 20 60 20 100 {}
+L 4 60 0 100 -0 {}
+L 4 60 -40 100 -40 {}
+L 4 40 -100 40 -60 {}
+L 4 -0 -100 0 -60 {}
+L 4 -40 -100 -40 -60 {}
+L 4 -40 -20 -20 10 {}
+L 4 -20 10 0 -20 {}
+L 4 0 -20 20 10 {}
+L 4 20 10 40 -20 {}
+B 5 -102.5 -42.5 -97.5 -37.5 {name=thetaj
+dir=inout}
+B 5 -42.5 -102.5 -37.5 -97.5 {name=Vb
+dir=inout}
+B 5 -2.5 -102.5 2.5 -97.5 {name=Vdd
+dir=inout}
+B 5 37.5 -102.5 42.5 -97.5 {name=Vc
+dir=inout}
+B 5 -102.5 -2.5 -97.5 2.5 {name=xj
+dir=inout}
+B 5 17.5 97.5 22.5 102.5 {name=GND
+dir=inout}
+B 5 -22.5 97.5 -17.5 102.5 {name=Wij
+dir=inout}
+B 5 97.5 -42.5 102.5 -37.5 {name=Ioutn
+dir=inout}
+B 5 97.5 -2.5 102.5 2.5 {name=Ioutp
+dir=inout}
+T {@name} -40 20 0 0 0.4 0.4 {}
