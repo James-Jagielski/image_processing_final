@@ -1,38 +1,43 @@
-v {xschem version=3.4.5 file_version=1.2}
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
 }
-T {@symname} -81 -6 0 0 0.3 0.3 {}
-T {@name} 135 -102 0 0 0.2 0.2 {}
+V {}
+S {}
+E {}
 L 4 -130 -90 130 -90 {}
 L 4 -130 90 130 90 {}
 L 4 -130 -90 -130 90 {}
 L 4 130 -90 130 90 {}
-B 5 147.5 -82.5 152.5 -77.5 {name=Vdd dir=inout}
 L 7 130 -80 150 -80 {}
-T {Vdd} 125 -84 0 1 0.2 0.2 {}
-B 5 147.5 -62.5 152.5 -57.5 {name=Ioutn dir=inout}
 L 7 130 -60 150 -60 {}
-T {Ioutn} 125 -64 0 1 0.2 0.2 {}
-B 5 147.5 -42.5 152.5 -37.5 {name=Ioutp dir=inout}
 L 7 130 -40 150 -40 {}
-T {Ioutp} 125 -44 0 1 0.2 0.2 {}
-B 5 147.5 -22.5 152.5 -17.5 {name=xj dir=inout}
 L 7 130 -20 150 -20 {}
-T {xj} 125 -24 0 1 0.2 0.2 {}
-B 5 147.5 -2.5 152.5 2.5 {name=thetaj dir=inout}
 L 7 130 0 150 0 {}
-T {thetaj} 125 -4 0 1 0.2 0.2 {}
-B 5 147.5 17.5 152.5 22.5 {name=Vc dir=inout}
 L 7 130 20 150 20 {}
-T {Vc} 125 16 0 1 0.2 0.2 {}
-B 5 147.5 37.5 152.5 42.5 {name=Wij dir=inout}
 L 7 130 40 150 40 {}
-T {Wij} 125 36 0 1 0.2 0.2 {}
-B 5 147.5 57.5 152.5 62.5 {name=Vb dir=inout}
 L 7 130 60 150 60 {}
-T {Vb} 125 56 0 1 0.2 0.2 {}
-B 5 147.5 77.5 152.5 82.5 {name=GND dir=inout}
 L 7 130 80 150 80 {}
+B 5 147.5 -82.5 152.5 -77.5 {name=Vdd dir=inout}
+B 5 147.5 -62.5 152.5 -57.5 {name=Ioutn dir=inout}
+B 5 147.5 -42.5 152.5 -37.5 {name=Ioutp dir=inout}
+B 5 147.5 -22.5 152.5 -17.5 {name=xj dir=inout}
+B 5 147.5 -2.5 152.5 2.5 {name=thetaj dir=inout}
+B 5 147.5 17.5 152.5 22.5 {name=vc dir=inout}
+B 5 147.5 37.5 152.5 42.5 {name=Wij dir=inout}
+B 5 147.5 57.5 152.5 62.5 {name=Vb dir=inout}
+B 5 147.5 77.5 152.5 82.5 {name=GND dir=inout}
+T {@symname} -81 -6 0 0 0.3 0.3 {}
+T {@name} 135 -102 0 0 0.2 0.2 {}
+T {Vdd} 125 -84 0 1 0.2 0.2 {}
+T {Ioutn} 125 -64 0 1 0.2 0.2 {}
+T {Ioutp} 125 -44 0 1 0.2 0.2 {}
+T {xj} 125 -24 0 1 0.2 0.2 {}
+T {thetaj} 125 -4 0 1 0.2 0.2 {}
+T {vc} 125 16 0 1 0.2 0.2 {}
+T {Wij} 125 36 0 1 0.2 0.2 {}
+T {Vb} 125 56 0 1 0.2 0.2 {}
 T {GND} 125 76 0 1 0.2 0.2 {}
