@@ -75,28 +75,12 @@ C {devices/iopin.sym} 70 330 0 0 {name=p7 lab=vc}
 C {devices/iopin.sym} -10 460 1 0 {name=p8 lab=GND}
 C {devices/iopin.sym} 20 -80 3 0 {name=p9 lab=Vdd}
 C {/home/ttuser/image_processing_final/triode.sym} 50 400 0 0 {name=X1}
-C {sky130_fd_pr/pfet3_01v8.sym} -80 -30 0 0 {name=M27
-L=0.15
-W=1
-body=VDD
-nf=1 mult=1
-model=pfet_01v8
-spiceprefix=X
-}
 C {sky130_fd_pr/pfet3_01v8.sym} 40 40 0 0 {name=M1
 L=0.15
 W=1
 body=VDD
 nf=1 mult=1
 model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet3_01v8.sym} -80 120 0 0 {name=M18
-L=0.15
-W=1
-body=GND
-nf=1 mult=1
-model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 80 120 2 0 {name=M2
@@ -116,6 +100,22 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 80 200 2 0 {name=M4
+L=0.15
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} -80 -30 0 0 {name=M5
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_01v8.sym} -80 120 0 0 {name=M6
 L=0.15
 W=1
 body=GND
