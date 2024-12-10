@@ -72,8 +72,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} -180 10 2 0 {name=M18
-L=0.15
-W=1
+L=0.5
+W=12
 body=GND
 nf=1 mult=1
 model=nfet_01v8

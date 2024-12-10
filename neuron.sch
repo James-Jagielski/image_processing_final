@@ -5,15 +5,11 @@ K {}
 V {}
 S {}
 E {}
-N 70 70 120 70 {
-lab=Ioutp}
 N -60 30 60 30 {
 lab=#net1}
 N 150 100 270 100 {
-lab=Vlamda}
+lab=xi}
 N -0 30 0 180 {
-lab=#net1}
-N 30 210 180 210 {
 lab=#net1}
 N 40 170 40 210 {
 lab=#net1}
@@ -22,15 +18,11 @@ lab=#net1}
 N -0 240 210 240 {
 lab=GND}
 N 210 100 210 180 {
-lab=Vlamda}
+lab=xi}
 N 590 100 710 100 {
-lab=Vlamda}
+lab=Vc_out}
 N 590 160 710 160 {
-lab=Vlamda}
-N 210 150 470 150 {
-lab=Vlamda}
-N 560 -50 740 -50 {
-lab=#net2}
+lab=Vb}
 N 730 -50 730 0 {
 lab=#net2}
 N 730 0 770 -0 {
@@ -38,27 +30,23 @@ lab=#net2}
 N 770 -20 770 20 {
 lab=#net2}
 N 530 -20 530 20 {
-lab=Vlamda}
+lab=xi}
 N 420 0 530 -0 {
-lab=Vlamda}
+lab=xi}
 N 420 0 420 150 {
-lab=Vlamda}
-N 560 330 740 330 {
-lab=#net3}
+lab=xi}
 N 730 330 730 380 {
 lab=#net3}
 N 730 380 770 380 {
 lab=#net3}
 N 530 360 530 440 {
-lab=Vlamda}
+lab=xi}
 N 770 360 770 440 {
 lab=#net3}
 N 420 400 530 400 {
-lab=Vlamda}
-N 420 470 500 470 {
-lab=Vlamda}
+lab=xi}
 N 420 150 420 470 {
-lab=Vlamda}
+lab=xi}
 N 530 500 770 500 {
 lab=#net4}
 N 650 500 650 520 {
@@ -121,217 +109,48 @@ N 340 210 340 740 {
 lab=GND}
 N -100 -0 -90 -0 {
 lab=Ioutn}
-N -100 70 70 70 {
-lab=Ioutp}
 N 90 0 100 0 {
 lab=Irefp}
 N 300 70 310 70 {
 lab=Irefn}
 N -100 150 210 150 {
-lab=Vlamda}
+lab=xi}
 N 830 150 920 150 {
-lab=Vlamda}
-N 800 470 920 470 {
-lab=xi_T}
+lab=xoff}
 N 710 600 920 600 {
-lab=Vlamda}
+lab=Vc_out}
 N 650 40 650 100 {
-lab=Vlamda}
+lab=Vc_out}
 N 650 40 900 40 {
-lab=Vlamda}
+lab=Vc_out}
 N 900 40 900 600 {
-lab=Vlamda}
+lab=Vc_out}
 N 710 660 900 660 {
-lab=Vlamda}
-N 650 160 650 420 {}
-N 650 420 840 420 {}
-N 840 420 840 660 {}
-C {madvlsi/pmos3.sym} -60 0 0 0 {name=M1
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/pmos3.sym} 60 0 0 1 {name=M2
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/pmos3.sym} 150 70 0 0 {name=M3
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/pmos3.sym} 270 70 0 1 {name=M4
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 0 210 0 1 {name=M5
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 210 210 0 0 {name=M6
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/capacitor.sym} 340 180 0 0 {name=C1
-value=1p
-m=1}
-C {/home/ttuser/image_processing_final/triode.sym} 580 170 0 0 {name=X1}
-C {/home/ttuser/image_processing_final/triode.sym} 720 170 0 1 {name=X2}
-C {madvlsi/pmos3.sym} 530 -50 0 1 {name=M7
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/pmos3.sym} 770 -50 0 0 {name=M8
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {/home/ttuser/image_processing_final/triode.sym} 700 670 0 0 {name=X3}
-C {madvlsi/pmos3.sym} 530 330 0 1 {name=M9
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/pmos3.sym} 770 330 0 0 {name=M10
-L=0.15
-W=1
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 530 470 0 0 {name=M11
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 770 470 0 1 {name=M12
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
+lab=Vb}
+N 650 160 650 420 {
+lab=Vb}
+N 650 420 840 420 {
+lab=Vb}
+N 840 420 840 660 {
+lab=Vb}
+N 570 330 730 330 {
+lab=#net3}
+N 40 210 170 210 {
+lab=#net1}
+N -100 70 110 70 {
+lab=Ioutp}
+N 570 -50 730 -50 {
+lab=#net2}
+N 810 470 920 470 {
+lab=xi_T}
+N 420 470 490 470 {
+lab=xi}
+N 420 150 470 150 {
+lab=xi}
+N 340 150 420 150 {
+lab=xi}
+N 210 150 340 150 {
+lab=xi}
 C {devices/iopin.sym} 590 650 2 0 {name=p1 lab=Vlamda}
 C {devices/iopin.sym} 900 660 2 1 {name=p2 lab=Vb}
 C {devices/iopin.sym} 920 600 2 1 {name=p3 lab=Vc_out}
@@ -344,3 +163,103 @@ C {devices/iopin.sym} 310 70 2 1 {name=p7 lab=Irefn}
 C {devices/iopin.sym} -100 150 0 1 {name=p8 lab=xi}
 C {devices/iopin.sym} 920 470 2 1 {name=p13 lab=xi_T}
 C {devices/iopin.sym} 920 150 2 1 {name=p14 lab=xoff}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 340 180 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {/home/ttuser/image_processing_final/triode.sym} 580 170 0 0 {name=X1}
+C {/home/ttuser/image_processing_final/triode.sym} 720 170 0 1 {name=X2}
+C {/home/ttuser/image_processing_final/triode.sym} 700 670 0 0 {name=X3}
+C {sky130_fd_pr/pfet3_01v8.sym} 80 0 0 1 {name=M1
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 130 70 0 0 {name=M2
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 290 70 0 1 {name=M3
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 550 -50 0 1 {name=M4
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 750 -50 0 0 {name=M7
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 550 330 0 1 {name=M8
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 750 330 0 0 {name=M9
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_01v8.sym} 790 470 0 1 {name=M18
+L=0.15
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_01v8.sym} 510 470 0 0 {name=M6
+L=0.15
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_01v8.sym} 20 210 0 1 {name=M5
+L=0.15
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_01v8.sym} 190 210 0 0 {name=M10
+L=0.15
+W=1
+body=GND
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} -80 0 0 0 {name=M27
+L=0.15
+W=1
+body=VDD
+nf=1 mult=1
+model=pfet_01v8
+spiceprefix=X
+}
